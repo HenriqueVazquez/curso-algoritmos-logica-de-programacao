@@ -1,32 +1,28 @@
 Algoritmo "Testes dias"
 
 Var
-  x : inteiro
-  dia: caractere
+
+   a, b, c, menor : inteiro
 
 Inicio
-   escreva("Escreva o dia da semana: ")
-   leia(x)
 
-   escolha x
-   caso1
-        dia <- "somingo"
-   caso2
-        dia <- "segunda"
-   caso 3
-        dia <- "terça"
-   caso 4
-        dia <- "quarta"
-   caso 5
-        dia <- "quinta"
-   caso 6
-        dia <- "sexta"
-   caso 7
-        dia <- "sabado"
-   outrocaso
-            dia < "valor invalido"
-   fimescolha
-   
-   escreval("Dia da semana: ", dia)
-   
+   escreva("Primeiro valor: ")
+   leia(a)
+   escreva("Segundo valor: ")
+   leia(b)
+   escreva("Terceiro valor: ")
+   leia(c)
+
+   se (a < b) e (a < c) entao
+      menor <- a
+   senao
+      se b < c entao
+         menor <- b
+      senao
+         menor <- c
+      fimse
+   fimse
+
+   escreval("MENOR = ", menor)
+
 Fimalgoritmo
