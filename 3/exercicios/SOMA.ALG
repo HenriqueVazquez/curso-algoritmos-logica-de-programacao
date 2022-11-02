@@ -2,19 +2,19 @@ Algoritmo "Soma"
 
 Var
 
- x, y, soma: inteiro
- 
+   x, y, soma: inteiro
+
 Inicio
-escreval("Some dois numeros:")
-escreva("Digite x:")
-leia(x)
-escreva("Digite y:")
-leia(y)
+   escreval("Some dois numeros:")
+   escreva("Digite x:")
+   leia(x)
+   escreva("Digite y:")
+   leia(y)
 
-soma <- x + y
+   soma <- x + y
 
 
-escreval("Soma =", soma)
+   escreval("Soma =", soma)
 
 
 Fimalgoritmo

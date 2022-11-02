@@ -24,8 +24,8 @@ Inicio
       fimpara
    fimpara
 
-   para i de 0 até n\2 faca
-      para j de n -1 até  i +1 passo -1 faca
+   para i de 0 até n - 1 faca
+      para j de i + 1 até  n -1  faca
 
          somaDiagonalPrincipal <- somaDiagonalPrincipal + mat[i, j]
       fimpara

@@ -3,19 +3,16 @@ Algoritmo "cada_linha"
 Var
 
    mat: vetor [0..9, 0..9] de inteiro
-   i, n, j , maiorDaLinha : inteiro
+   maiorDaLinha: vetor [0..9] de inteiro
+   i, maior, n, j  : inteiro
 
 
 
 Inicio
-
-
    repita
       escreva("Qual a ordem da matriz? ")
       leia(n)
    ate (n >= 0) e (n <= 10)
-
-
 
    para i de 0 até n -1 faca
       para j de 0 até n -1 faca
@@ -24,25 +21,23 @@ Inicio
       fimpara
    fimpara
 
-
-   escreval("MAIOR ELEMENTO DE CADA LINHA:")
    para i de 0 até n -1 faca
-        maiorDaLinha <- 0
+      maior <- mat[i, 0]
 
       para j de 0 até n -1 faca
-         se  mat[i, j] >  maiorDaLinha entao
-            maiorDaLinha <- mat[i, j]
+         se  maior < mat[i, j]  entao
+            maior <- mat[i, j]
          fimse
       fimpara
-      se    maiorDaLinha > 0 entao
-         escreval(maiorDaLinha)
-      fimse
+      maiorDaLinha[i] <- maior
    fimpara
 
    escreval
 
-
-
+   escreval("MAIOR ELEMENTO DE CADA LINHA:")
+   para i de 0 até n -1 faca
+      escreval(maiorDaLinha[i])
+   fimpara
 
 
 

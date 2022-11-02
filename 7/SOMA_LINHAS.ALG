@@ -2,13 +2,17 @@ Algoritmo "soma_linhas"
 // Disciplina   : [Linguagem e Lógica de Programação]
 Var
 
-   mat: vetor [0..4, 0..4] de inteiro
-   m, i, n, j , somaLinhas : inteiro
+   mat: vetor [0..4, 0..4] de real
+   m, i, n, j  : inteiro
+   somaLinhas: real
 
 
 
 Inicio
-
+     somaLinhas <- 0
+     m =0;
+     n=0;
+     
 
    repita
       escreva("Qual a quantidade de linhas da matriz? ")

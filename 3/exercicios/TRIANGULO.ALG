@@ -1,4 +1,4 @@
-Algoritmo "retangulo"
+Algoritmo "triangulo"
 
 Var
 

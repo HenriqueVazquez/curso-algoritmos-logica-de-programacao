@@ -2,28 +2,26 @@ Algoritmo "Dardo"
 
 Var
 
-   lancamento1, lancamento2, lancamento3, maior : real
+   d1, d2, d3, maior : real
 
 Inicio
-   escreva("Digite o primeiro arremesso ")
-   leia(lancamento1)
-   escreva("Digite o segundo arremesso ")
-   leia(lancamento2)
-   escreva("Digite o terceiro arremesso ")
-   leia(lancamento3)
 
-   se glicose <= 100 entao
-      classificacao <- "Normal"
+   escreval("Digite as tres distancias:")
+   leia(d1)
+   leia(d2)
+   leia(d3)
+
+   se (d1 > d2) e (d1 > d3) entao
+      maior <- d1
    senao
-      se glicose <= 140 entao
-         classificacao <- "Elevado"
+      se d2 > d3 entao
+         maior <- d2
       senao
-            classificacao <- "Diabetes"
+         maior <- d3
       fimse
    fimse
 
-
-
-   escreval("Classificacao: ", classificacao)
+   escreval("MAIOR DISTANCIA = ", maior:6:2)
 
 Fimalgoritmo
+k

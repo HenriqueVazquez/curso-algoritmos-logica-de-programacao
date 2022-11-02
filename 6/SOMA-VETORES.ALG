@@ -17,10 +17,12 @@ Inicio
       escreva("Digite um numero para somar: ")
       leia(vet[i])
    fimpara
-
+    escreval(" ")
    escreva("VALORES = ")
    para i de 0 até n -1 faca
       escreva(vet[i]:4:1, " ")
+      
+
    fimpara
 
    para i de 0 até n -1 faca

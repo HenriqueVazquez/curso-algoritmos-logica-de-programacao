@@ -1,16 +1,22 @@
-Algoritmo "Pagamento"
+Algoritmo "pagamento"
 
 Var
 
- raio, area: real
- 
+   nome : caractere
+   valorHora, pagamento : real
+   horasTrabalhadas : inteiro
+
 Inicio
-escreval("Area de um criculo:")
-escreva("Informe o raio: ")
-leia(raio)
 
-area <- Pi * Exp(raio, 2)
+   escreva("Nome: ")
+   leia(nome)
+   escreva("Valor por hora: ")
+   leia(valorHora)
+   escreva("Horas trabalhadas: ")
+   leia(horasTrabalhadas)
 
-escreval("Area = ", area:4:3)
+   pagamento <- valorHora * horasTrabalhadas
+
+   escreval("O pagamento para ", nome, " deve ser ", pagamento:8:2)
 
 Fimalgoritmo

@@ -1,45 +1,45 @@
 Algoritmo "Quadrante"
 
 Var
-x, y : inteiro
-q: caractere
+   x, y : inteiro
+   q: caractere
 
 Inicio
 
 
-repita
-   escreva("Digite os valores das coordenadas X:  ")
-   leia(x)
-   escreva("Digite os valores das coordenadas Y:  ")
-   leia(y)
-   se (X > 0) e (Y > 0) entao
-      q <- "Q1"
-   senao
-      se (X < 0) e (Y > 0) entao
-         q <- "Q2"
+   repita
+      escreva("Digite os valores das coordenadas X:  ")
+      leia(x)
+      escreva("Digite os valores das coordenadas Y:  ")
+      leia(y)
+      se (X > 0) e (Y > 0) entao
+         q <- "Q1"
       senao
-         se (X < 0) e (Y < 0) entao
-            q <- "Q3"
+         se (X < 0) e (Y > 0) entao
+            q <- "Q2"
          senao
-            se (X > 0) e (Y < 0) entao
-               q <- "Q4"
+            se (X < 0) e (Y < 0) entao
+               q <- "Q3"
             senao
-               se (X = 0) e (Y = 0) entao
-                  q <- "Origem"
+               se (X > 0) e (Y < 0) entao
+                  q <- "Q4"
                senao
-                  se (x = 0) entao
-                     q <- "Eixo Y"
+                  se (X = 0) e (Y = 0) entao
+                     q <- "Origem"
                   senao
-                     q <- "Eixo X"
+                     se (x = 0) entao
+                        q <- "Eixo Y"
+                     senao
+                        q <- "Eixo X"
+                     fimse
                   fimse
                fimse
             fimse
          fimse
       fimse
-   fimse
-   escreval("QUADRANTE ", q)
-   escreval(q)
-ate (q = "Origem")
+      escreval("QUADRANTE ", q)
+      escreval(q)
+   ate (q = "Origem")
 
 
 

@@ -1,31 +1,30 @@
 Algoritmo "lanchonete"
 
 Var
-   numero1, numero2 : inteiro
-   eMultiplo:boleano
+
+   codigo, quantidade : inteiro
+   valorPago : real
 
 Inicio
-   escreva("Vamos verificar se dois numeros são multiplos entre eles")
 
-   escreva("Escreva o primeiro numero: ")
-   leia(numero1)
+   escreva("Codigo do produto comprado: ")
+   leia(codigo)
+   escreva("Quantidade comprada: ")
+   leia(quantidade)
 
-   escreva("Escreva o segundo numero: ")
-   leia(numero2)
-
-   escolha (numero1 % numero2)  ou (numero2 % numero1)
-   caso 0
-      eMultiplo <- true
-   outrocaso
-      eMultiplo <- false
+   escolha codigo
+   caso 1
+      valorPago <- 5.0 * quantidade
+   caso 2
+      valorPago <- 3.5 * quantidade
+   caso 3
+      valorPago <- 4.8 * quantidade
+   caso 4
+      valorPago <- 8.9 * quantidade
+   caso 5
+      valorPago <- 7.32 * quantidade
    fimescolha
-   
-    se   (eMultiplo = true ) entao
-    escreval("São multiplos")
-    senao
-        escreval("Náo são multiplos")
-        fimse
 
-
+   escreval("Valor a pagar: R$ ", valorPago:8:2)
 
 Fimalgoritmo
